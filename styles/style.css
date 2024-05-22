@@ -1,6 +1,7 @@
 /* Шрифты */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Основные стили для меню и общего блока */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -16,8 +17,9 @@
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     padding: .4rem .8rem;
-    background-color: #12171e;
+    background-color: #252525;
     transition: all 0.5s ease;
+    z-index: 1000;
 }
 
 .nav-item.navbar.active ~ main {
@@ -34,7 +36,7 @@
     color: #fff;
     top: .4rem;
     left: 50%; 
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 50px;
     transform: translateX(-50%);
     cursor: pointer;
@@ -42,6 +44,10 @@
 
 .navbar.navbar.active #btn {
     left: 90%;
+}
+
+.navbar .top {
+    margin-bottom: 40px;
 }
 
 .navbar .top .logo {
@@ -93,6 +99,7 @@
     min-width: 50px;
     height: 50px;
     text-align: center;
+    font-size: 1.2rem;
     border-radius: 12px;
     line-height: 50px;
 }
@@ -105,4 +112,17 @@
 .navbar.active .nav-item {
     display: flex;
     opacity: 1;
+}
+
+main {
+    position: relative;
+    top: 0;
+    left: 80px;
+    width: calc(100% - 80px);
+    transition: all 0.5s ease;
+
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+
+    z-index: 0;
 }

@@ -1,0 +1,161 @@
+main .welcome_block{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+
+    color: #fff;
+
+    background-image: url("/res/bg_index.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.welcome_block .shadow_box {
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.shadow_box .container {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .row {
+    width: 120vh;
+}
+
+.row img {
+    width: 40%;
+    margin-bottom: 50px;
+} 
+
+.row .top_text {
+    width: 70%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row .top_text h1{
+    font-size: 40px;
+    padding-bottom: 40px;
+    line-height: 3.5rem;
+}
+.row .top_text a {
+    color: rgb(199, 199, 199)
+}
+
+.row .top_text ul {
+    list-style-type: none;
+}
+.row .top_text ul li {
+    padding: 10px;
+}
+
+.container .down_text {
+    width: 150px;
+}
+
+.container .down_text a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.shadow_box .scroll_down {
+    position: absolute;
+    bottom: 30px;  /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scrollDownAnimation 2.2s infinite;
+}
+
+.shadow_box .scroll_down a {
+    text-decoration: none;
+    font-size: 40px;
+    color: rgb(199, 199, 199)
+}
+
+@keyframes scrollDownAnimation {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, 10px);
+    }
+}
+
+main .short_about{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.short_about .inform {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.inform p {
+    font-size: 16px;
+    letter-spacing: 0.05rem;
+    padding: 10px;
+}
+
+.inform ul {
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main .activity {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.activity .block_activity {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.block_activity h1 {
+    font-size: 34px;
+}
+
+.block_activity .block-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.block-items .item {
+    width: 350px;
+    min-height: 380px;
+    border: 1px solid rgb(172, 172, 172);
+}
+
+.block-items .item img {
+    width: 100%;
+}
+
+.block-items .item h3 {
+    padding: 20px 16px 4px 16px;
+}
+
+.block-items .item p {
+    padding: 10px 16px 4px 16px;
+}
