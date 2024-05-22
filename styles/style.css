@@ -1,3 +1,6 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,13 +13,20 @@
     left: 0;
     height: 100vh;
     width: 80px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
     padding: .4rem .8rem;
     background-color: #12171e;
     transition: all 0.5s ease;
 }
 
+.nav-item.navbar.active ~ main {
+    left: 280px;
+    width: calc(100% - 280px);
+}
+
 .navbar.active {
-    width: 250px;
+    width: 280px;
 }
 
 .navbar #btn {
@@ -44,6 +54,10 @@
     opacity: 0;
 }
 
+.navbar .top .logo img {
+    width: 220px;
+}
+
 .navbar.active .top .logo {
     opacity: 1;
 }
@@ -55,8 +69,8 @@
 
 .navbar ul li {
     position: relative;
-    height: 50px;
-    width: 90%;
+    height: 60px;
+    width: 100%;
     margin: 0.8rem auto;
     list-style-type: none;
 }
@@ -66,6 +80,7 @@
     align-items: center;
     text-decoration: none;
     color: #fff;
+    white-space: nowrap;
     border-radius: 0.8rem;
 }
 
@@ -83,9 +98,11 @@
 }
 
 .navbar .nav-item {
+    display: none;
     opacity: 0;
 }
 
 .navbar.active .nav-item {
+    display: flex;
     opacity: 1;
 }
