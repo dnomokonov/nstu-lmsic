@@ -126,3 +126,68 @@ main {
 
     z-index: 0;
 }
+
+footer {
+    background: #F5F5F5;
+    color: #252525;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.footer-section {
+    margin-top: 40px;
+    width: 300px;
+    text-align: left;
+    padding: 20px;
+}
+
+.footer-section.about {
+    line-height: 30px;
+}
+
+.footer-section h3 {
+    margin-bottom: 12px;
+}
+
+.footer-section .contact_item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.contact_item i {
+    font-size: 25px;    
+    padding-right: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #bdbdbd;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a:hover {
+    color: #252525;
+}
+
+.footer-bottom {
+    color: #bdbdbd;
+    padding-bottom: 15px;
+}
+
+.footer-section.contact p{
+    color: #12171e;
+}
