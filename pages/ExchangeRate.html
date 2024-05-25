@@ -53,39 +53,42 @@
     <main>
         <!-- калькулятор валют -->
         <section class="calc_toolkit">
-            <div class="calc_side">
-                <p class="title_side">У меня есть</p>
-                <div class="calc_switcher" data-id="from">
-                    <div class="calc_switcher_item active">RUB</div>
-                    <div class="calc_switcher_item">UAH</div>
-                    <div class="calc_switcher_item">USD</div>
-                    <div class="calc_switcher_item">EUR</div>
+            <div class="grid_calc">
+                <div class="title_block">
+                    <h1>Калькулятор валют</h1>
                 </div>
-                <div class="cacl_input_box" data-id="from">
-                    <input type="text" value="0" maxlength="10" data-reverse="false">
-                    <div class="calc_input_box_rate">1 RUB = 23 UAH</div>
-                </div>
-            </div> 
+                
+                <div class="calc_side">
+                    <p class="title_side">У меня есть</p>
+                    <div class="calc_switcher" data-id="from">
+                        <div class="calc_switcher_item active">RUB</div>
+                        <div class="calc_switcher_item">UAH</div>
+                        <div class="calc_switcher_item">USD</div>
+                        <div class="calc_switcher_item">EUR</div>
+                    </div>
+                    <div class="calc_input_box" data-id="from">
+                        <input type="text" id="fromRate" value="100" maxlength="10" data-reverse="false">
+                        <div class="calc_input_box_rate">1 RUB = 23 UAH</div>
+                    </div>
+                </div> 
+    
+                <div class="calc_reverse"></div>
+    
+                <div class="calc_side">
+                    <p class="title_side">Хочу приобрести</p>
+                    <div class="calc_switcher" data-id="to">
+                        <div class="calc_switcher_item">RUB</div>
+                        <div class="calc_switcher_item active">UAH</div>
+                        <div class="calc_switcher_item">USD</div>
+                        <div class="calc_switcher_item">EUR</div>
+                    </div>
+                    <div class="calc_input_box" data-id="to">
+                        <input type="text" id="toRate" maxlength="10" data-reverse="true">
+                        <div class="calc_input_box_rate">1 UAH = 0.23 RUB</div>
+                    </div>
+                </div> 
+            </div>
 
-            <div class="calc_reverse"></div>
-
-            <div class="calc_side">
-                <p class="title_side">Хочу приобрести</p>
-                <div class="calc_switcher" data-id="to">
-                    <div class="calc_switcher_item">RUB</div>
-                    <div class="calc_switcher_item active">UAH</div>
-                    <div class="calc_switcher_item">USD</div>
-                    <div class="calc_switcher_item">EUR</div>
-                </div>
-                <div class="cacl_input_box" data-id="to">
-                    <input type="text" value="0" maxlength="10" data-reverse="false">
-                    <div class="calc_input_box_rate">1 UAH = 0.23 RUB</div>
-                </div>
-            </div> 
-        </section>
-
-        <!-- таблица с актуальными курсами -->
-        <section class="current_rate">
             
         </section>
 
@@ -150,7 +153,6 @@
     </footer>
 
     <script src="/js/script.js"></script>
-    <script src="https://openexchangerates.github.io/money.js/money.js"></script>
-    <script src="/js/money.js"></script>
+    <script src="/js/rate.js"></script>
 </body>
 </html>
