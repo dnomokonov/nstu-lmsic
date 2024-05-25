@@ -2,3 +2,86 @@ main .calc_toolkit {
     width: 100%;
     min-height: 80vh;
 }
+
+.calc_toolkit {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc_side .title_side {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.calc_side .calc_switcher {
+    display: flex;
+}
+
+.calc_switcher_item {
+    width: 100px;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.calc_switcher_item:first-child {
+    border-left: 1px solid #cdcdcd;
+    border-radius: 4px 0 0 4px;
+}
+
+.calc_switcher_item:last-child {
+    border-right: 1px solid #cdcdcd;
+    border-radius: 0 4px 4px 0;
+}
+
+.calc_switcher_item:hover {
+    background-color: #ececec;
+}
+
+.calc_switcher_item.active {
+    background-color: red;
+    color: #fff;
+}
+
+.cacl_input_box {
+    margin: 24px 0;
+    padding: 20px 20px 15px;
+    border: 1px solid #cdcdcd;
+}
+
+.cacl_input_box input {
+    width: 350px;
+    height: 60px;
+    outline: none;
+    border: none;
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.calc_input_box_rate {
+    font-size: 15px;
+    color: #555555;
+}
+
+.calc_reverse {
+    width: 50px;
+    min-height: 50px;
+    background: url("/res/transfer.svg") no-repeat 50%;
+    background-size: 50px;
+    margin: 0 50px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.calc_reverse:hover {
+    opacity: 0.5;
+}
