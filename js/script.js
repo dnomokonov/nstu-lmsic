@@ -8,22 +8,16 @@ btnNavBar.onclick = function() {
 document.addEventListener("DOMContentLoaded", function() {
     const navbarLinks = document.querySelectorAll('.navbar ul li a')
     let currentPath = window.location.pathname
-
+    
     // кастыль =)
     if (currentPath.split('.').at(-1) != "html") {
-        currentPath = "/index.html"
+        currentPath += "index.html"
     } else {
         currentPath = currentPath.replace(/\/$/, '')
     }
 
     navbarLinks.forEach(link => {
         let linkPath = new URL(link.href, window.location.origin).pathname
-
-        if (linkPath === "/") {
-            linkPath = "/index.html"
-        } else {
-            linkPath = linkPath.replace(/\/$/, '')
-        }
 
         if (currentPath === linkPath) {
             link.classList.add('active')
