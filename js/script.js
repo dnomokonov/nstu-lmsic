@@ -6,18 +6,26 @@ btnNavBar.onclick = function() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    let navbarLinks = document.querySelectorAll('.navbar ul li a');
-    let currentPath = window.location.pathname;
+    const navbarLinks = document.querySelectorAll('.navbar ul li a')
+    let currentPath = window.location.pathname
 
-    console.log(currentPath)
+    if (currentPath === "/") {
+        currentPath = "/index.html"
+    } else {
+        currentPath = currentPath.replace(/\/$/, '')
+    }
 
     navbarLinks.forEach(link => {
-        let linkPath = new URL(link.href, window.location.origin).pathname;
+        let linkPath = new URL(link.href, window.location.origin).pathname
 
-        console.log(linkPath)
-
-        if ((currentPath === '/' && linkPath === '/index.html') || linkPath === currentPath) {
-            link.classList.add('active');
+        if (linkPath === "/") {
+            linkPath = "/index.html"
+        } else {
+            linkPath = linkPath.replace(/\/$/, '')
         }
-    });
-});
+
+        if (currentPath === linkPath) {
+            link.classList.add('active')
+        }
+    })
+})
