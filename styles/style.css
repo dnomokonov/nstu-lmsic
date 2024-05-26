@@ -119,13 +119,17 @@
     opacity: 1;
 }
 
+.navbar ul li a.active {
+    background-color: #ff0000;
+    color: #fff;
+}
+
 main {
     position: relative;
     top: 0;
     left: 80px;
     width: calc(100% - 80px);
     transition: all 0.5s ease;
-
     font-family: "Montserrat", sans-serif;
     font-style: normal;
 
@@ -170,6 +174,7 @@ footer {
     display: flex;
     align-items: center;
     margin: 10px;
+    color: #12171e;
 }
 
 .contact_item i {
@@ -188,6 +193,10 @@ footer {
 
 .footer-section ul li {
     margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    transition: all 0.4s ease;
 }
 
 .footer-section ul li a:hover {
