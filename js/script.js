@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentPath = window.location.pathname;
 
     navbarLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPath) {
+        let linkPath = new URL(link.href, window.location.origin).pathname;
+
+        if ((currentPath === '/' && linkPath === '/index.html') || linkPath === currentPath) {
             link.classList.add('active');
         }
     });
