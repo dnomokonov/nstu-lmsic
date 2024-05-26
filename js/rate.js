@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         inputBoxRate.textContent = `1 ${fromCurrency} = ${conversionRateFromTo} ${toCurrency}`
         outputBoxRate.textContent = `1 ${toCurrency} = ${conversionRateToFrom} ${fromCurrency}`
 
-        // Update the converted value in inputRateTo
         let inputAmount = parseFloat(inputRateFrom.value)
         if (!isNaN(inputAmount)) {
             inputRateTo.value = (inputAmount * conversionRateFromTo).toFixed(4)

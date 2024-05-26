@@ -8,8 +8,7 @@ btnNavBar.onclick = function() {
 document.addEventListener("DOMContentLoaded", function() {
     const navbarLinks = document.querySelectorAll('.navbar ul li a')
     let currentPath = window.location.pathname
-    
-    // кастыль =)
+
     if (currentPath.split('.').at(-1) != "html") {
         currentPath += "index.html"
     } else {
