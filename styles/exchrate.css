@@ -92,7 +92,7 @@ main .calc_toolkit {
 .calc_reverse {
     width: 50px;
     min-height: 50px;
-    background: url("/res/transfer.svg") no-repeat 50%;
+    background: url("../res/transfer.svg") no-repeat 50%;
     background-size: 50px;
     margin: 0 50px;
     cursor: pointer;

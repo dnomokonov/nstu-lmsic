@@ -6,7 +6,7 @@ main .welcome_block{
 
     color: #fff;
 
-    background-image: url("./res/bg_index.jpeg");
+    background-image: url("../res/bg_index.jpeg");
     background-position: center;
     background-size: cover;
 }
