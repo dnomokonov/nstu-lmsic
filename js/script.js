@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const navbarLinks = document.querySelectorAll('.navbar ul li a')
     let currentPath = window.location.pathname
 
-    if (currentPath === "/") {
+    if (currentPath.split('.').at(-1) === "/") {
         currentPath = "/index.html"
     } else {
         currentPath = currentPath.replace(/\/$/, '')
