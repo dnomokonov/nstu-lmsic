@@ -303,6 +303,7 @@ main .email_posts {
     height: 50px;
     font-size: 16px;
     padding-left: 50px;
+    outline: none;
 }
 
 .email_block form #sbnt {
@@ -317,6 +318,11 @@ main .email_posts {
     color: #fff;
     border: none;
     background-color: red;
+    transition: all 0.4s ease;
+}
+
+.email_block form #sbnt:hover {
+    background-color: #d80e0e;
 }
 
 .email_posts .email_banner {
